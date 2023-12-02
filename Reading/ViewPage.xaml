@@ -4,8 +4,18 @@
              xmlns:local="clr-namespace:Reading"
              x:Class="Reading.ViewPage">
 
-
-    <Label/>
-
+    <StackLayout>
+        <ListView ItemsSource="{Binding DataEntrys}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding title}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 </ContentPage>
