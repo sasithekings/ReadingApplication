@@ -7,8 +7,8 @@
     <ScrollView>
         <VerticalStackLayout>
 
-            <Button Text="View Page"/>
-            <Button Text="Add Page"/>
+            <Button Text="View Page" Command="{Binding ViewPageCommand}" />
+            <Button Text="Add Page" Command="{Binding AddPageCommand}" />
 
         </VerticalStackLayout>
     </ScrollView>
