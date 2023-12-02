@@ -6,6 +6,11 @@ Thank you for visiting our repository!
 
 This project outlines the development of a reading application, employing the Model-View-ViewModel (MVVM) architecture and database integration. The application allows users to add titles and text to a database, with corresponding buttons for data input. Upon pressing the appropriate button, the application displays the stored data.
 
+# Team
+# Github UserName =  sasithekings
+# Github UserName =  anusrisamineni
+
+
 #
 
 # This is the Main page with which we started.
