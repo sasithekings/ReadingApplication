@@ -4,19 +4,19 @@
              xmlns:local="clr-namespace:Reading"
              x:Class="Reading.ViewPage">
 
-    <StackLayout>
-        <ListView ItemsSource="{Binding DataEntrys}" BackgroundColor="Black" SeparatorVisibility="None"
+	<StackLayout Padding="20">
+		<ListView ItemsSource="{Binding DataEntrys}" BackgroundColor="Black" SeparatorVisibility="None"
                   ItemTapped="OnItemTapped" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Label Text="{Binding title}"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Padding="10" BackgroundColor="Black">
+							<Label Text="{Binding title}" TextColor="White"/>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
 
 </ContentPage>
