@@ -15,5 +15,14 @@ namespace Reading
             database.CreateTable<DataEntry>();
         }
 
+        public void InsertDataItem(DataEntry item)
+        {
+            database.Insert(item);
+        }
+
+        public ObservableCollection<DataEntry> GetDataItems()
+        {
+            return new ObservableCollection<DataEntry>(database.Table<DataEntry>());
+        }
     }
 }
