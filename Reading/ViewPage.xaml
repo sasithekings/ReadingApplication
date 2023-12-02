@@ -5,7 +5,8 @@
              x:Class="Reading.ViewPage">
 
     <StackLayout>
-        <ListView ItemsSource="{Binding DataEntrys}">
+        <ListView ItemsSource="{Binding DataEntrys}" BackgroundColor="Black" SeparatorVisibility="None"
+                  ItemTapped="OnItemTapped" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
