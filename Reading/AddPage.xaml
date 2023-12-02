@@ -8,12 +8,12 @@
 
     <StackLayout>
         <Label Text="Title" />
-        <Entry/>
+        <Entry Text="{Binding Title}" />
 
         <Label Text="Content" />
-        <Entry/>
+        <Entry Text="{Binding Content}" />
 
-        <Button Text="Submit" />
+        <Button Text="Submit" Command="{Binding SubmitCommand}" />
     </StackLayout>
 
 </ContentPage>

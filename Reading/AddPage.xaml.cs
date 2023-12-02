@@ -11,6 +11,7 @@ namespace Reading
         public AddPage()
         {
             InitializeComponent();
+            BindingContext = new AddPageViewModel();
         }
 
     }
