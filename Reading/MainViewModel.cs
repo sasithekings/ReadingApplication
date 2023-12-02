@@ -27,7 +27,25 @@ namespace Reading
 
 
     }
-   
+
+
+    public class ViewPageViewModel : BindableObject
+    {
+        public ObservableCollection<DataEntry> DataEntrys { get; set; } = new ObservableCollection<DataEntry>();
+        public ICommand ItemSelectedCommand { get; }
+        public ViewPageViewModel()
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            var service = new ReadingDataBase();
+            DataEntrys = service.GetDataItems();
+        }
+    }
+
+
 
 }
 
