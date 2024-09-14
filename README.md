@@ -37,4 +37,4 @@ This project outlines the development of a reading application, employing the Mo
 # Content Viewing Page
 ![Content Viewing Page](Project5_Images/viewcontent.png)
 
-# Youtube link :- <https://youtu.be/S1-NAUIIL0c>
+
